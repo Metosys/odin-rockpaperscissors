@@ -1,7 +1,7 @@
 
 // Variables
 let choices = ['rock', 'paper', 'scissors']
-const playerSelection = "Rock";
+const playerSelection = prompt("Choose your hand:");
 let computerSelection = getComputerChoice(choices);
 
 
