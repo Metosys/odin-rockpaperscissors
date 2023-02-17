@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css"></style>
     <title>Document</title>
 </head>
 <body>
+    <div class="header">
+        <h1>Rock, Paper, Scissors!</h1>
+    </div>
+    <div class="selection">
+        <h3>Select Your Hand:</h3>
+        <div class="pics">
+            <div class="pic" id="paper">
+                <img src="pics/papereyes.jpg" alt="Pick Rock">
+                <p>Select Paper</p>
+            </div>
+            <div class="pic" id="rock">
+                <img src="pics/rockeyes.png" alt="Pick Rock">
+                <p>Select Rock</p>
+            </div>
+            <div class="pic" id="scissors">
+                <img src="pics/scissorseyes.png" alt="Pick Scissors">
+                <p>Select Scissors</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <h3>First to 5 wins!</h3>
+    <p id="result"></p>  
+    <p id="winner"></p>
+
+    <div class="scoreboard">
+        <div class="score">
+            <p>Player Score:</p>
+            <p id="playerScore">0</p>
+        </div>
+        <div class="score">
+            <p>Computer Score:</p>
+            <p id="computerScore">0</p>
+        </div>
+        
+    </div>
     
 </body>
 </html>

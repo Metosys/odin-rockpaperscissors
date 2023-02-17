@@ -1,0 +1,42 @@
+body {
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5%;
+    justify-content: space-between;
+    align-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.header {
+    background-color: antiquewhite;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.pics {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.pic {
+    border: 3px solid black;
+    border-radius: 5%;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 42px;
+    margin: auto;
+}
