@@ -1,8 +1,8 @@
 body {
-    background-color: darkgrey;
+    background-color: lightgray;
     display: flex;
     flex-direction: column;
-    margin: 10px 5%;
+    margin: 0;
     justify-content: space-between;
     align-content: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -14,29 +14,126 @@ img {
 }
 
 .header {
-    background-color: antiquewhite;
+    background-color: lavender;
     text-align: center;
     font-weight: bolder;
+    font-size: 24px;
+    border-bottom: 5px solid white;
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image: linear-gradient(lightblue, lavender);
 }
 
-.pics {
+.field {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.btns {
     display: flex;
     justify-content: space-around;
     padding: 5px;
 }
 
-.pic {
+.btn {
     border: 3px solid black;
     border-radius: 5%;
-    padding: 20px;
+    padding: 16px;
     text-align: center;
     font-weight: bold;
+    font-size: 20px;
     background-color: aliceblue;
 }
 
 .scoreboard {
     display: flex;
     justify-content: center;
-    gap: 42px;
-    margin: auto;
+    gap: 50px;
+    background-color: aliceblue;
+    border-top: 5px solid white;
+    border-bottom: 5px solid black;
 }
+
+.score {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.player {
+    border: 3px solid black;
+    border-radius: 5%;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.player#playerOne {
+    background-color: blue;
+}
+
+.player#playerTwo {
+    background-color: red;
+}
+
+.versus {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.centered {
+    font-size: 32px;
+    text-align: center;
+}
+
+#result {
+    text-align: center;
+}
+
+.selection {
+    margin: 10px 10%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 60%;
+    height: 20%;
+    background-color: rgb(255, 176, 255);
+    padding: 10px;
+    left: 20%;
+    top: 20%;
+    border: 3px solid black;
+}
+
+.modal-content {
+    padding: 10px;
+}
+
+.close {
+    color: gray;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#winner {
+    font-size: 48px;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+}
+

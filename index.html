@@ -12,30 +12,40 @@
     <div class="header">
         <h1>Rock, Paper, Scissors!</h1>
     </div>
-    <div class="selection">
-        <h3>Select Your Hand:</h3>
-        <div class="pics">
-            <div class="pic" id="paper">
-                <img src="pics/papereyes.jpg" alt="Pick Rock">
-                <p>Select Paper</p>
+    <div class="field">
+        <h3 class="centered">First to 5 wins!</h3>
+        <div class="versus">
+            <div>
+                <img class="player" id="playerOne" src="pics/playerOne.png">
             </div>
-            <div class="pic" id="rock">
-                <img src="pics/rockeyes.png" alt="Pick Rock">
-                <p>Select Rock</p>
+            <div>
+                <h1 class="centered"> Vs</h1>
+                <p id="result"></p> 
             </div>
-            <div class="pic" id="scissors">
-                <img src="pics/scissorseyes.png" alt="Pick Scissors">
-                <p>Select Scissors</p>
+            <div>
+                <img class="player" id="playerTwo" src="pics/playerTwo.png">
             </div>
-            
+        </div>
+    </div>
+     
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="winner"></p>
         </div>
     </div>
 
-    <h3>First to 5 wins!</h3>
-    <p id="result"></p>  
-    <p id="winner"></p>
-
+    <div class="selection">
+        <h3>Select Your Hand:</h3>
+        <div class="btns">
+            <button class="btn" id="paper">Select Paper</button>
+            <button class="btn" id="rock">Select Rock</button>
+            <button class="btn" id="scissors">Select Scissors</button> 
+        </div>
+    </div>
+    
     <div class="scoreboard">
+        
         <div class="score">
             <p>Player Score:</p>
             <p id="playerScore">0</p>
